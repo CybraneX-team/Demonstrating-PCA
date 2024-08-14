@@ -10,8 +10,10 @@ Machine Learning Libraries: LogisticRegression, LinearRegression, DecisionTreeCl
 Metrics and Evaluation: mean_squared_error, r2_score, mean_absolute_error, accuracy_score, precision_score, recall_score, f1_score
 Visualization: matplotlib
 Utilities: time, os
+
 2. Data Loading Function (load_data)
 This function loads a dataset from either a CSV or JSON file based on the file extension provided. It uses pandas to read the data and returns a DataFrame.
+
 3. Data Preprocessing Function (preprocess_data)
 Missing Value Handling: Replaces missing values with the median of each column.
 
@@ -28,18 +30,23 @@ Handling Encoded Data:
 
 If OneHotEncoder is used, the encoded data is concatenated back to the original numerical columns.
 If LeaveOneOutEncoder or CatBoostEncoder is used, the original categorical columns are replaced with the encoded values.
+
 4. Principal Component Analysis (PCA) Function (perform_pca)
 PCA is performed on the preprocessed features to reduce dimensionality and capture the variance in the data.
 Explained Variance Ratio: The ratio of variance captured by each principal component is calculated.
+
 5. Scree Plot Function (plot_scree)
 Plots the cumulative explained variance ratio against the number of principal components.
 This plot helps visualize how much of the variance in the data is captured by the first few principal components.
+
 6. Model Evaluation for Classification (evaluate_classification_models)
 Trains and evaluates several classification models (Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Classifier, XGBoost).
 Metrics Evaluated: Accuracy, Precision, Recall, F1 Score, and Training Time.
+
 7. Model Evaluation for Regression (evaluate_regression_models)
 Trains and evaluates several regression models (Linear Regression, Decision Tree, Random Forest, Gradient Boosting, Support Vector Regressor, XGBoost).
 Metrics Evaluated: Mean Squared Error (MSE), R^2 Score, Mean Absolute Error (MAE), and Training Time.
+
 8. Main Script
 Load Dataset: The dataset is loaded using the load_data function.
 Preprocess Data: The dataset is preprocessed using the preprocess_data function.
