@@ -24,8 +24,11 @@ Categorical Columns: Identifies columns with object or category data types.
 Encoding:
 
 OneHotEncoder: Used if all categorical columns have fewer than 10 unique values.
+
 LeaveOneOutEncoder: Used if all categorical columns have between 10 and 100 unique values.
+
 CatBoostEncoder: Used if any categorical column has more than 100 unique values.
+
 Handling Encoded Data:
 
 If OneHotEncoder is used, the encoded data is concatenated back to the original numerical columns.
