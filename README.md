@@ -27,10 +27,7 @@ a. OneHotEncoder: Used if all categorical columns have fewer than 10 unique valu
 b. LeaveOneOutEncoder: Used if all categorical columns have between 10 and 100 unique values. <br>
 c. CatBoostEncoder: Used if any categorical column has more than 100 unique values.
 
-Handling Encoded Data:
-
-If OneHotEncoder is used, the encoded data is concatenated back to the original numerical columns.
-If LeaveOneOutEncoder or CatBoostEncoder is used, the original categorical columns are replaced with the encoded values.
+Handling Encoded Data: If OneHotEncoder is used, the encoded data is concatenated back to the original numerical columns. If LeaveOneOutEncoder or CatBoostEncoder is used, the original categorical columns are replaced with the encoded values.
 
 4. Principal Component Analysis (PCA) Function (perform_pca)
 PCA is performed on the preprocessed features to reduce dimensionality and capture the variance in the data.
